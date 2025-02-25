@@ -33,16 +33,20 @@ footer {
 
 
 #carouselExampleIndicators {
-    width: 100vw; /* Ocupa el ancho completo de la pantalla */
-    margin-left: calc(-50vw + 50%); /* Centra el carousel */
-    max-height: 60vh; /* Ajusta el alto del carousel */
+    width: 100vw;
+    /* Ocupa el ancho completo de la pantalla */
+    margin-left: calc(-50vw + 50%);
+    /* Centra el carousel */
+    max-height: 60vh;
+    /* Ajusta el alto del carousel */
     overflow: hidden;
 }
 
 .carousel-item img {
     width: 100vw;
     height: 60vh;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
 }
 
 /* Estilo para los h5 del carousel */
@@ -80,9 +84,12 @@ footer {
 /* Tarjetas de productos */
 .product-card {
     width: 100%;
-    max-width: 300px;  /* Ancho fijo */
-    min-height: 300px; /* Alto mínimo */
-    height: 400px;     /* Alto fijo */
+    max-width: 300px;
+    /* Ancho fijo */
+    min-height: 300px;
+    /* Alto mínimo */
+    height: 400px;
+    /* Alto fijo */
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -101,8 +108,10 @@ footer {
 .product-card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 100%;              /* Ancho completo de la tarjeta */
-    height: 200px;            /* Alto fijo */
+    width: 100%;
+    /* Ancho completo de la tarjeta */
+    height: 200px;
+    /* Alto fijo */
     object-fit: cover;
 }
 
@@ -149,4 +158,55 @@ footer {
     border-radius: 10px;
     max-height: 400px;
     object-fit: cover;
+}
+
+
+/* Animación suave de cambio */
+.animate-change {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #28a745;
+    transform: scale(1.2);
+}
+
+
+/* Hacer la tabla del carrito responsiva */
+@media (max-width: 768px) {
+    table.table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    table.table th,
+    table.table td {
+        min-width: 120px;
+    }
+}
+
+/* Estilo para el modal de finalizar compra */
+.swal2-popup {
+    border-radius: 15px;
+}
+
+.swal2-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.swal2-confirm {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.swal2-cancel {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
 }
