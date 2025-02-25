@@ -210,8 +210,6 @@ const agregarAlCarrito = (id) => {
                     }
                 });
 
-                // Ver el contenido del carrito en la consola (opcional)
-                console.log('Carrito:', carrito);
             }
         })
         .catch(error => {
@@ -499,8 +497,7 @@ const finalizarCompra = () => {
         if (result.isConfirmed) {
             // Si se confirmó y los datos son válidos
             const { celular, email } = result.value;
-            console.log('Celular:', celular, 'Email:', email);
-
+            
             // Mostrar mensaje de compra finalizada
             Swal.fire({
                 title: '¡Compra Finalizada!',
